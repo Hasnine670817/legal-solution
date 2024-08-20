@@ -9,6 +9,9 @@
     <!-- Title -->
     <title>Legal-Solution</title>
 
+    <!-- Fav - Icon -->
+    <link rel="shortcut icon" href="images/fav.png" type="image/x-icon">
+
     <!-- Google - Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,7 +28,7 @@
 
         @media (min-width:1280px) {
             .container {
-                max-width: 1200px;
+                max-width: 1200px !important;
                 padding: 0 15px;
             }
         }
@@ -41,13 +44,13 @@
         tailwind.config = {
           theme: {
             extend: {
-              colors: {
-                clifford: '#da373d',
-              },
-              fontFamily: {
-                'EB-Garamond': ['EB Garamond', 'serif'],
-                'Poppins': ["Poppins", 'sans-serif'],
-              }
+                colors: {
+                    clifford: '#da373d',
+                },
+                fontFamily: {
+                    'EB-Garamond': ['EB Garamond', 'serif'],
+                    'Poppins': ["Poppins", 'sans-serif'],
+                },
             },
           },
         }
@@ -59,6 +62,8 @@
     <!-- header-area start here -->
     <header>
         <div class="container mx-auto px-2 sm:px-5">
+
+            <!-- navbar -->
             <nav class="navbar py-5 lg:py-12">
                 <div class="navbar-start">
                     <div class="dropdown">
@@ -152,9 +157,21 @@
                     </ul>
                 </div>
                 <div class="navbar-end">
-                    <button class="btn btn-active bg-yellow-600 hover:bg-yellow-700 text-white md:text-[18px] md:h-16 md:px-7">Free Consultation</button>
+                    <button class="btn btn-active bg-[#B68C5A] hover:bg-yellow-600 text-white md:text-[18px] md:h-16 md:px-7">Free Consultation</button>
                 </div>
             </nav>
+
+            <!-- banner-area -->
+            <section class="bg-[linear-gradient(180deg,_#111_0%,_rgba(17,_17,_17,_0)_100%),url('images/banner.png')] bg-no-repeat bg-center bg-cover text-center py-[104px] rounded-lg">
+                <div class="banner-content max-w-2xl px-5 sm:px-10 md:px-5 lg:px-0 mx-auto">
+                    <h1 class="text-5xl sm:text-6xl md:text-7xl font-extrabold text-white">We Provide Effective Legal Solutions</h1>
+                    <p class="text-[14px] sm:text-base text-white mt-6 mb-8">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                    <form action="#" class="sm:flex items-center justify-center gap-6 text-start sm:text-center">
+                        <input type="text" placeholder="Search your services" class="input input-bordered w-full max-w-[500px] md:h-16 md:px-7 " required />
+                        <button type="submit" class="mt-3 sm:mt-0 btn border-0 btn-active bg-[#B68C5A] hover:bg-yellow-700 text-white md:text-[18px] md:h-16 md:px-7 w-36">Search</button>
+                    </form>
+                </div>
+            </section>
         </div>
     </header>
     

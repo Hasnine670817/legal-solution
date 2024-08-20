@@ -29,12 +29,17 @@
         @media (min-width:1280px) {
             .container {
                 max-width: 1200px !important;
-                padding: 0 15px;
+                margin: 0 auto;
             }
+        }
+
+        .container {
+            padding: 0 15px;
         }
 
         h1,h2,h3,h4,h5,h6 {
             font-family: "EB Garamond", serif;
+            color: #414040;
         }
 
     </style>
@@ -51,13 +56,16 @@
                     'EB-Garamond': ['EB Garamond', 'serif'],
                     'Poppins': ["Poppins", 'sans-serif'],
                 },
+                backgroundImage: {
+                    'gradient-div': ['linear-gradient(180deg, #F3F3F3 0%, rgba(243, 243, 243, 0) 100%)'],
+                },
             },
           },
         }
     </script>
 
 </head>
-<body class="font-Poppins text-gray-600">
+<body class="font-Poppins text-gray-600 text-[13px] sm:text-base">
 
     <!-- header-area start here -->
     <header>
@@ -162,10 +170,10 @@
             </nav>
 
             <!-- banner-area -->
-            <section class="bg-[linear-gradient(180deg,_#111_0%,_rgba(17,_17,_17,_0)_100%),url('images/banner.png')] bg-no-repeat bg-center bg-cover text-center py-[104px] rounded-lg">
+            <section class="bg-[linear-gradient(180deg,_#111_0%,_rgba(17,_17,_17,_0)_100%),url('images/banner.png')] bg-no-repeat bg-center bg-cover text-center py-[104px] rounded-lg mx-2 sm:mx-0">
                 <div class="banner-content max-w-2xl px-5 sm:px-10 md:px-5 lg:px-0 mx-auto">
-                    <h1 class="text-5xl sm:text-6xl md:text-7xl font-extrabold text-white">We Provide Effective Legal Solutions</h1>
-                    <p class="text-[14px] sm:text-base text-white mt-6 mb-8">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                    <h1 class="text-4xl sm:text-6xl md:text-7xl font-extrabold text-white">We Provide Effective Legal Solutions</h1>
+                    <p class="text-white mt-6 mb-8">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
                     <form action="#" class="sm:flex items-center justify-center gap-6 text-start sm:text-center">
                         <input type="text" placeholder="Search your services" class="input input-bordered w-full max-w-[500px] md:h-16 md:px-7 " required />
                         <button type="submit" class="mt-3 sm:mt-0 btn border-0 btn-active bg-[#B68C5A] hover:bg-yellow-700 text-white md:text-[18px] md:h-16 md:px-7 w-36">Search</button>
@@ -174,6 +182,59 @@
             </section>
         </div>
     </header>
+
+    <!-- main-area start here -->
+    <main>
+        <article>
+            <!-- legal-practice-area start here -->
+            <section class="legal-practice-area py-24 md:py-28">
+                <div class="container">
+                    <div class="legal-heading text-center mb-10 md:pb-16">
+                        <h2 class="text-3xl sm:text[40px] font-extrabold">The Legal Practice Area</h2>
+                        <p class="mt-4 sm:mt-6">There are many variations of passages of Lorem Ipsum available, but the majority have <br class="hidden lg:block"> suffered alteration in some form, by injected humour.</p>
+                    </div>
+                    <div class="legal-grid-area grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+                        <div class="legal-grid-item text-center px-7 py-9 sm:px-7 md:px-16 md:pt-14 md:pb-16 border-b-[1px] sm:border-r-[1px] lg:border-b-[1px] lg:border-gray-200 lg:border-l-0 hover:bg-gradient-div max-w-96 mx-auto sm:max-w-none sm:mx-0">
+                            <img class="mx-auto" src="images/business.png" alt="image">
+                            <h3 class="mt-5 mb-4 md:mt-8 md:mb-4 text-2xl md:text-[32px] font-extrabold">Business Law</h3>
+                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                            <a href="#" class="mt-8 inline-block"><img src="images/Frame.png" alt="image"></a>
+                        </div>
+                        <div class="legal-grid-item text-center px-7 py-9 sm:px-7 md:px-16 md:pt-14 md:pb-16 border-b-[1px] lg:border-b-[1px] lg:border-x-[1px] lg:border-gray-200 hover:bg-gradient-div max-w-96 mx-auto sm:max-w-none sm:mx-0">
+                            <img class="mx-auto" src="images/criminal.png" alt="image">
+                            <h3 class="mt-5 mb-4 md:mt-8 md:mb-4 text-2xl md:text-[32px] font-extrabold">Criminal Law</h3>
+                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                            <a href="#" class="mt-8 inline-block"><img src="images/Frame.png" alt="image"></a>
+                        </div>
+                        <div class="legal-grid-item text-center px-7 py-9 sm:px-7 md:px-16 md:pt-14 md:pb-16 border-b-[1px] sm:border-r-[1px] lg:border-b-[1px] lg:border-r-0 lg:border-gray-200 hover:bg-gradient-div max-w-96 mx-auto sm:max-w-none sm:mx-0">
+                            <img class="mx-auto" src="images/child.png" alt="image">
+                            <h3 class="mt-5 mb-4 md:mt-8 md:mb-4 text-2xl md:text-[32px] font-extrabold">Child Support</h3>
+                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                            <a href="#" class="mt-8 inline-block"><img src="images/Frame.png" alt="image"></a>
+                        </div>
+                        <div class="legal-grid-item text-center px-7 py-9 sm:px-7 md:px-16 md:pt-14 md:pb-16 border-b-[1px] lg:border-b-0 lg:border-gray-200 lg:border-l-0 hover:bg-gradient-div max-w-96 mx-auto sm:max-w-none sm:mx-0">
+                            <img class="mx-auto" src="images/education.png" alt="image">
+                            <h3 class="mt-5 mb-4 md:mt-8 md:mb-4 text-2xl md:text-[32px] font-extrabold">Education Law</h3>
+                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                            <a href="#" class="mt-8 inline-block"><img src="images/Frame.png" alt="image"></a>
+                        </div>
+                        <div class="legal-grid-item text-center px-7 py-9 sm:px-7 md:px-16 md:pt-14 md:pb-16 border-b-[1px] sm:border-b-0 sm:border-r-[1px] lg:border-b-0 lg:border-x-[1px] lg:border-gray-200 hover:bg-gradient-div max-w-96 mx-auto sm:max-w-none sm:mx-0">
+                            <img class="mx-auto" src="images/divorce.png" alt="image">
+                            <h3 class="mt-5 mb-4 md:mt-8 md:mb-4 text-2xl md:text-[32px] font-extrabold">Divorce Law</h3>
+                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                            <a href="#" class="mt-8 inline-block"><img src="images/Frame.png" alt="image"></a>
+                        </div>
+                        <div class="legal-grid-item text-center px-7 py-9 sm:px-7 md:px-16 md:pt-14 md:pb-16 lg:border-b-0 lg:border-gray-200 hover:bg-gradient-div max-w-96 mx-auto sm:max-w-none sm:mx-0">
+                            <img class="mx-auto" src="images/tax.png" alt="image">
+                            <h3 class="mt-5 mb-4 md:mt-8 md:mb-4 text-2xl md:text-[32px] font-extrabold">Tax Law</h3>
+                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                            <a href="#" class="mt-8 inline-block"><img src="images/Frame.png" alt="image"></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </article>
+    </main>
     
 </body>
 </html>
